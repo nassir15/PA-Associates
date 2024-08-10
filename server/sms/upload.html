@@ -1,0 +1,158 @@
+
+<html>
+
+<!-- Mirrored from paassociate.in/server/sms/upload.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Aug 2024 07:55:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Upload Job</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="../../../code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="../../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="../../../stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../../code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="../../resources/demos/style.html">
+    <script src="../../../code.jquery.com/jquery-1.12.4.js"></script>
+    
+    <link rel="stylesheet" href="../../../maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <script src="../../../maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../../../ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-filestyle.min.html"> </script>
+    <script src="../../../code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <link rel="stylesheet" href="../../../use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="upload.css" />
+</head>
+<body>
+ <div class="noel-warpper">
+        
+<div class="noel-subcontainer">
+        <div class="noel-container"><br>
+                <div class="progress">
+                        <div class="progress-bar progress-bar-striped bg-success" id="noel-progressbar" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Step 1 &nbsp; 50%</div>
+                      </div>
+                <form action="http://paassociate.in/server/mailer.php" method="post" enctype="multipart/form-data">
+                       <fieldset id="f1">
+                            <legend>Details</legend>
+                            <div class="form-group required">
+                                    <label class="control-label" for="exampleFormControlInput1">Company Name / Your Name</label>
+                                    <input required type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="name">
+                                  </div>
+                        <div class="form-group required">
+                          <label class="control-label" for="exampleFormControlInput1">Email Address</label>
+                          <input required type="email"  name="mail" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+                        </div>
+                
+                        <div class="form-group required">
+                            <label class="control-label" for="exampleFormControlInput1">Phone/ Mobile number</label>
+                            <input required type="number" name="phno" class="form-control" id="exampleFormControlInput3" placeholder="eg: 8754472172">
+                          </div>
+                        <div class="form-group required">
+                          <label class="control-label" for="exampleFormControlSelect1">Select Job Type</label>
+                          <select required class="form-control" name="category" id="exampleFormControlSelect1">
+                              <option value="nil">Select Job Type</option>
+                                <option value="GST_Returns_filing" >GST Returns Filing </option>
+                                <option value="Income_Tax">Income Tax</option>
+                            <option value="New_GST_Registration" >New GST Registration </option>
+                            <option value="MSME / SSI">MSME / SSI</option>
+                            <option value="Accounting">Accounting</option>
+                            <option value="PAN">PAN</option>
+                            <option value="Import & Export">Import & Export Code</option>
+                            <option value="EPF">EPF</option>
+                            <option value="ESI">ESI</option>
+                            <option value="TAN">TAN</option>
+                           
+                            <option value="Legal / Drafting work">Legal / Drafting work</option>
+                            <option value="All others Jobs">All others Jobs</option>
+                          </select>
+                        </div>
+                    
+                        <div class="form-group">
+                          <label for="exampleFormControlTextarea1">Remarks</label>
+                          <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        
+
+                        <span class="row">
+                            <input style="opacity:0" disabled class="col-xs-1"/>
+                             <a class="col-xs-3" href="../../index.html">
+                                 <button class="btn btn-success col-xs-12" type="button">Home <i class="fas fa-home"></i></button>
+                             </a>
+                             <input style="opacity:0" disabled class="col-xs-3"/>
+                                <button class="btn btn-primary col-xs-4" id="next" type="button">Add Attachments <i class="fas fa-arrow-circle-right"></i> </button>
+    
+                        </span>
+                       </fieldset>
+            
+                       <fieldset class="noel-field" id="f2" style="display:none">
+                            <div class="container">
+                                        
+                                        <div id="noel-ro1" class="row">
+                                        <div class="col-xs-12">
+                                                <div class="form-group">
+                                                    <label class="control-label">File attachment 1</label>
+                                                     <input type="text" name="fil1" class="form-control" id="exampleFormControlInput1" placeholder="Information about this file">
+                                                    <input name="file1" type="file" class="filestyle" data-buttonText="Select a File">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="noel-ro2" style="opacity:0" class="row">
+                                                <div class="col-xs-12">
+                                                 <div class="form-group">
+                                                       <label class="control-label">File attachment 2</label>
+                                                        <input type="text" name="fil2" class="form-control" id="exampleFormControlInput1" placeholder="Information about this file">
+                                                      <input name="file2" disabled id="noel-inpu2" type="file" class="filestyle" data-buttonText="Select a File">
+                                                 </div>
+                                                </div>
+                                        </div>
+                                        <div id="noel-ro3" style="opacity:0" class="row">
+                                             <div class="col-xs-12">
+                                                       <div class="form-group">
+                                                        <label class="control-label">File attachment 3</label>
+                                                         <input type="text" name="fil3" class="form-control" id="exampleFormControlInput1" placeholder="Information about this file">
+                                                          <input name="file3" disabled id="noel-inpu3" type="file" class="filestyle" data-buttonText="Select a File">
+                                                    </div>
+                                                 </div>
+                                        </div>
+                                        <div id="noel-ro4" style="opacity:0" class="row">
+                                                <div class="col-xs-12">
+                                                        <div class="form-group">
+                                                            <label class="control-label">File attachment 4</label>
+                                                             <input type="text" name="fil4" class="form-control" id="exampleFormControlInput1" placeholder="Information about this file">
+                                                            <input name="file4" disabled id="noel-inpu4" type="file" class="filestyle" data-buttonText="Select a File">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                      <div id="noel-ro5" style="opacity:0" class="row">
+                                              <div class="col-xs-12">
+                                                      <div class="form-group">
+                                                          <label class="control-label">File attachment 5</label>
+                                                           <input type="text" name="fil5" class="form-control" id="exampleFormControlInput1" placeholder="Information about this file">
+                                                          <input name="file5" disabled id="noel-inpu5" type="file" class="filestyle" data-buttonText="Select a File">
+                                                      </div>
+                                                  </div>
+                                              </div>
+        
+                                      
+                                    
+                                    <span class="noel-bottom">
+                                            <button class="btn btn-danger align-bottom" id="prev" type="button"><i class="fas fa-arrow-circle-left"></i>&nbsp;Back</button>&nbsp;
+                                            <button class="btn btn-primary align-bottom" id="more" type="button">Add  more files &nbsp;<i class="fas fa-plus"></i></button>&nbsp;
+                                            <button onclick="validateForm()" class="btn btn-success align-bottom" type="submit">Send Your Job &nbsp;<i class="fas fa-check"></i></button>
+                
+                                    </span>
+                                </div>
+                       </fieldset>
+                  </form>
+            </div>
+</div>
+ </div>
+ 
+<script src="script/jqurey.sc.ui.js"></script>
+</body>
+
+<!-- Mirrored from paassociate.in/server/sms/upload.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Aug 2024 07:56:05 GMT -->
+</html>

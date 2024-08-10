@@ -1,0 +1,37 @@
+
+.noel-warpper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.noel-subcontainer{
+    width: 90%;
+    max-width: 459px;
+    height: 95vh;
+    margin: auto;
+    box-shadow: 1px 1px 10px #000;
+    border-radius: 5px 5px 0 0;
+}
+.noel-container{
+    width: 90%;
+    max-width: 459px;
+    height: 95vh;
+    margin: auto;
+    
+}
+
+.container{
+    width: 90%;
+    max-width: 459px;
+}
+.noel-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-group.required .control-label:after {
+  content:" *";
+  color:red;
+}
